@@ -8,6 +8,11 @@ else
 fi
 
 X=$(git remote -v | grep $REMOTE | grep '(push)' | awk '{print $2}')
+if [ ! $(echo $X | grep 'bitbucket.org') ]
+then
+  echo "It isn't a Bitbucket repository." 1>&2
+  exit 1
+fi
 OWNER=$(echo $X | cut -d ':' -f 2 | cut -d '/' -f 1)
 REPOS=$(echo $X | cut -d '/' -f 2 | cut -d '.' -f 1)
 
