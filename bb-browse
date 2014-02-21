@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]
+then
+  REMOTE=origin
+else
+  REMOTE=$1
+fi
+
+X=$(git remote -v | grep $REMOTE | grep '(push)' | awk '{print $2}')
+OWNER=$(echo $X | cut -d ':' -f 2 | cut -d '/' -f 1)
+REPOS=$(echo $X | cut -d '/' -f 2 | cut -d '.' -f 1)
+
+$BROWSER https://bitbucket.org/${OWNER}/${REPOS}
