@@ -22,7 +22,7 @@ bb-browse origin
 ## TODO
 
 * Modify as a project can be installed by `make install`
-* Integrate to [bitbucket-cli](https://bitbucket.org/zhemao/bitbucket-cl://bitbucket.org/zhemao/bitbucket-cli)
+* Integrate to [bitbucket-cli](https://bitbucket.org/zhemao/bitbucket-cli)
 
 ## License
 
