@@ -8,7 +8,7 @@ else
 fi
 
 X=$(git remote -v | grep $REMOTE | grep '(push)' | awk '{print $2}')
-if [ ! $(echo $X | grep 'bitbucket.org') ]
+if [[ ! $X =~ 'bitbucket.org' ]]
 then
   echo "It isn't a Bitbucket repository." 1>&2
   exit 1
