@@ -1,31 +1,12 @@
 # Browser open shortcut for Bitbucket
 
-## Installation
+**This project was merged to bitbucket-cli-sub-commands.**
 
-```sh
-# clone this repository
-cp bb-browse/bb-browse $HOME/bin # or another directory which is included in $PATH
-```
-
-## Usage
-
-```sh
-bb-browse
-```
-
-You can specify an alias for a remote repository.
-
-```sh
-bb-browse origin
-```
-
-## TODO
-
-* Modify as a project can be installed by `make install`
-* Integrate to [bitbucket-cli](https://bitbucket.org/zhemao/bitbucket-cli)
+* [Bitbucket](https://bitbucket.org/kaosf/bitbucket-cli-sub-commands)
+* [GitHub](https://github.com/kaosf/bitbucket-cli-sub-commands)
 
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright &copy; 2014 ka
+Copyright (C) 2014 ka
